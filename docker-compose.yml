@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+  app:
+    build: ./docker/nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./web:/var/www/html
+    depends_on:
+      - web
+      - db
+
+  web:
+    build: ./docker/php
+    volumes:
+      - ./web:/var/www/html
+
+  db:
+    image: mysql:5.7
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_unicode_ci
+    ports:
+      - "13306:3306"
+    volumes:
+      - mysql:/var/lib/mysql
+    env_file:
+      - variable_mysql.env
+
+volumes:
+  mysql:
+    driver: local
