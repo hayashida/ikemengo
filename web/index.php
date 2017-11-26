@@ -13,7 +13,7 @@
             <a href="shopserch.php"><img src="./assets/img/icon_home_01.png" alt="見つける"></a>
         </div>
         <div class="col s6">
-            <a href="find.php"><img src="./assets/img/icon_home_02.png" alt="見つけた"></a>
+            <a href="shopfind.php"><img src="./assets/img/icon_home_02.png" alt="見つけた"></a>
         </div>
     </div>
 </div>
