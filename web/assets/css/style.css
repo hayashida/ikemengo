@@ -1,3 +1,11 @@
+nav {
+  background-color: #ffd000; }
+  nav .brand-logo {
+    color: #27558f; }
+
+.btn {
+  background-color: #27558f; }
+
 #toppage {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
