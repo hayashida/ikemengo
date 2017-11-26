@@ -1,11 +1,32 @@
 <?php
     $title = '登録';
+
+    //エンドポイントのURIとフォーマットパラメータを変数に入れる
+    $uri   = "https://api.gnavi.co.jp/RestSearchAPI/20150630/";
+    //APIアクセスキーを変数に入れる
+    $acckey= "aad069ce460b9d927353192ce6f143ea";
+    //返却値のフォーマットを変数に入れる
+    $format= "json";
+    //URL組み立て
+    $url  = sprintf("%s%s%s%s%s%s%s", $uri, "?format=", $format, "&keyid=", $acckey,"&id=", $_GET['shopid']);
+
+    //API実行
+    $json = file_get_contents($url);
+    //取得した結果をオブジェクト化
+    $obj  = json_decode($json);
+
+    $shop_name = '';
+    foreach((array)$obj as $key => $restArray){
+        if (strcmp($key, "rest") == 0) {
+            $shop_name = $restArray->{'name'};
+        }
+    }
 ?>
 <?php include 'layout/header.php' ?>
 <div class="navbar-fixed">
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><店舗名を表示></a>
+            <a href="#" class="brand-logo"><?php echo $shop_name ?></a>
         </div>
     </nav>
 </div>

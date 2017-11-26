@@ -1,7 +1,10 @@
 nav {
   background-color: #ffd000; }
   nav .brand-logo {
-    color: #27558f; }
+    color: #27558f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .btn {
   background-color: #27558f; }

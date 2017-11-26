@@ -72,7 +72,6 @@
                     $sql = "SELECT * FROM goods where gnavi_id = '${shop_id}'";
                     $rows = $db->query($sql);
                     foreach ($rows as $row) {
-                        var_dump($row);
                         $goods += $row['good'];
                     }
     ?>
