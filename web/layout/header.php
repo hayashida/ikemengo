@@ -9,4 +9,4 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ikemengo<?php echo isset($title) ? ' | ' . $title : '' ?></title>
 </head>
-<body>
+<body id="<?php if (isset($toppage)) echo 'toppage' ?>">

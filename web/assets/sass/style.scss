@@ -1,3 +1,26 @@
+#toppage {
+	background: {
+		image: url(../img/bg.png);
+		repeat: no-repeat;
+		size: cover;
+	}
+}
+
+.row_logo {
+	text-align: center;
+	.logo {
+		margin: {
+			left: auto;
+			right: auto;
+		}
+	}
+}
+.row_menu {
+	.col {
+		text-align: center;
+	}
+}
+
 .shoplist {
 	.shopimage {
 		object-fit: contain;

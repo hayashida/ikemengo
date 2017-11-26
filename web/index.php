@@ -1,8 +1,20 @@
+<?php
+    $toppage = true;
+?>
 <?php include 'layout/header.php' ?>
 <div class="container">
-    <ul>
-        <li><a href="shopserch.php">見つける</a></li>
-        <li><a href="find.php">見つけた</a></li>
-    </ul>
+    <div class="row row_logo">
+        <div class="col s12">
+            <h1 class="logo"><img src="./assets/img/logo.png" alt="IkemenGO"></h1>
+        </div>
+    </div>
+    <div class="row row_menu">
+        <div class="col s6">
+            <a href="shopserch.php"><img src="./assets/img/icon_home_01.png" alt="見つける"></a>
+        </div>
+        <div class="col s6">
+            <a href="find.php"><img src="./assets/img/icon_home_02.png" alt="見つけた"></a>
+        </div>
+    </div>
 </div>
 <?php include 'layout/footer.php' ?>
