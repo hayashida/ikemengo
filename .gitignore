@@ -9,6 +9,8 @@
 .Trashes
 .Thumbs.db
 
+node_modules
+
 web/config/database.php
 web/config/twitter.php
 web/vendor

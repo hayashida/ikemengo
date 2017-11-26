@@ -1,0 +1,39 @@
+nav {
+  background-color: #ffd000; }
+  nav .brand-logo {
+    color: #27558f; }
+
+.btn {
+  background-color: #27558f; }
+
+#toppage {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.row_logo {
+  text-align: center; }
+  .row_logo .logo {
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain; }
+    .row_logo .logo img {
+      width: 100%;
+      max-width: 550px; }
+
+.row_menu .col {
+  text-align: center;
+  object-fit: contain; }
+  .row_menu .col img {
+    width: 100%;
+    max-width: 220px; }
+
+.shoplist .shopimage {
+  object-fit: contain; }
+  .shoplist .shopimage img {
+    width: 100%; }
+
+.shoplist .shopname {
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
