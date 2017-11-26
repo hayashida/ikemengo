@@ -1,0 +1,11 @@
+.shoplist {
+	.shopimage {
+		object-fit: contain;
+		img {
+			width: 100%;
+		}
+	}
+	.shopname {
+		font-size: 1.2em;
+	}
+}
