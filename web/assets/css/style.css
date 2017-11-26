@@ -7,10 +7,18 @@
   text-align: center; }
   .row_logo .logo {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    object-fit: contain; }
+    .row_logo .logo img {
+      width: 100%;
+      max-width: 550px; }
 
 .row_menu .col {
-  text-align: center; }
+  text-align: center;
+  object-fit: contain; }
+  .row_menu .col img {
+    width: 100%;
+    max-width: 220px; }
 
 .shoplist .shopimage {
   object-fit: contain; }

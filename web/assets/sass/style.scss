@@ -13,11 +13,21 @@
 			left: auto;
 			right: auto;
 		}
+		object-fit: contain;
+		img {
+			width: 100%;
+			max-width: 550px;
+		}
 	}
 }
 .row_menu {
 	.col {
 		text-align: center;
+		object-fit: contain;
+		img {
+			width: 100%;
+			max-width: 220px;
+		}
 	}
 }
 
