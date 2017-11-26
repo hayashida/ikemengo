@@ -95,9 +95,9 @@
 
             foreach ($rows as $row) {
         ?>
-        <div class="row">
-            <div class="col s4"><img src="photo.php?id=<?php echo $row['id'] ?>" alt=""></div>
-            <div class="col s8"><?php echo $row['comment'] ?></div>
+        <div class="row shoplist">
+            <div class="col s4 shopimage"><img src="photo.php?id=<?php echo $row['id'] ?>" alt=""></div>
+            <div class="col s8 shopname"><?php echo $row['comment'] ?></div>
         </div>
         <?php
             }

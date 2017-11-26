@@ -10,10 +10,12 @@
         $imgdat = null;
         if($_FILES['image']['size'] == 0 || $_FILES['image']['error'] == 0){
         // バイナリデータ
-        $fp = fopen($_FILES["image"]["tmp_name"], "rb");
-        $imgdat = fread($fp, filesize($_FILES["image"]["tmp_name"]));
-        fclose($fp);
-        $imgdat = addslashes($imgdat);
+        // $fp = fopen($_FILES["image"]["tmp_name"], "rb");
+        // $imgdat = fread($fp, filesize($_FILES["image"]["tmp_name"]));
+        // fclose($fp);
+        // $imgdat = quotemeta($imgdat);
+        $imgdat = file_get_contents($_FILES["image"]["tmp_name"]);
+        // $imgdat = quotemeta($imgdat);
 
         // 拡張子
         $dat = pathinfo($_FILES["image"]["name"]);
